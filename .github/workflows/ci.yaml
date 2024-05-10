@@ -1,13 +1,12 @@
 name: CI Build and Test
 
-on:
-  push
-
+on:  # 'on' should be at the same indentation level as 'name'
+  push:  # 'push' should be indented under 'on'
 
 jobs:
   build:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest  # Ensure there is a space after the colon
 
     steps:
-      - uses:actions/checkout@v3
-      - run: echo "The repository has been checked out"
+      - uses: actions/checkout@v3  # Ensure there is a space after the hyphen
+      - run: echo "The repository has been checked out"  # Ensure there is a space after the hyphen
