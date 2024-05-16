@@ -1,3 +1,4 @@
+.gitignore
 Neo4j/keys.txt
 .env
 protect_ai.key
